@@ -45,7 +45,7 @@ pipeline{
                   script{
 		  sh 'cp -r ../Training-1@2/target .'
                   sh 'docker build . -t antoarun237/cicd-demo:$Docker_tag'
-		  sh 'sudo docker login -u antoarun237 -p 2622b9da-259e-4af1-8c36-4f41fc7338fe'
+		  sh 'docker login -u antoarun237 -p 2622b9da-259e-4af1-8c36-4f41fc7338fe'
 		  sh 'docker push antoarun237/cicd-demo:$Docker_tag'
                        }
                     }
