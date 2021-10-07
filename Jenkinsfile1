@@ -51,4 +51,4 @@ pipeline{
 		  sh 'docker push antoarun237/cicd-demo:$Docker_tag'
                        }
                     }
-                 }		
+                 }
