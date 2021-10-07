@@ -37,7 +37,7 @@ pipeline{
               stage('build'){
 		      steps {
 			      script{
-                sh 'docker build . -t deekshithsn/cicd-demo:$Docker_tag'
+                sh 'docker build . -t antoarun237/cicd-demo:$Docker_tag'
                 withCredentials([string(credentialsId: 'docker_password', variable: 'docker_password')]) {
     
                 sh '''docker login -u antoarun237 -p $docker_password
