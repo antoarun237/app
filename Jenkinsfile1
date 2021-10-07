@@ -8,8 +8,6 @@ pipeline{
         agent any  
         environment{
 	    Docker_tag = getDockerTag()
-        }
-        environment{
 	    DOCKERHUB_CREDENTIALS=credentials('dockerhub')
         }
         stages{
@@ -52,3 +50,4 @@ pipeline{
                        }
                     }
                  }
+}
