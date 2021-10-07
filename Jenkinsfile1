@@ -46,8 +46,8 @@ pipeline{
 		  sh 'cp -r ../Training-1@2/target .'
                   sh 'docker build . -t antoarun237/cicd-demo:$Docker_tag'
 		  withCredentials([string(credentialsId: 'docker-pass', variable: 'docker-pass')]){			    
-				  sh "docker login -u antoarun237 -p $docker-pass"
-				  sh "docker push antoarun237/cicd-demo:$Docker_tag"
+				  sh 'docker login -u antoarun237 -p $docker-pass'
+				  sh 'docker push antoarun237/cicd-demo:$Docker_tag'
 			}
                        }
                     }
