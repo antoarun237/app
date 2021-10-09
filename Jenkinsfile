@@ -46,7 +46,7 @@ pipeline{
                 {
               steps{
                   script{
-		 sh 'cp -r ../Training@2/target .'
+		 sh 'cp -r ../Training-1@2/target .'
                  sh 'docker build . -t antoarun237/cicd-demo:$Docker_tag'
 		 sh 'echo $DOCKERHUB_CREDENTIALS_PSW | docker login -u $DOCKERHUB_CREDENTIALS_USR --password-stdin'
 		 sh 'docker push antoarun237/cicd-demo:$Docker_tag'
