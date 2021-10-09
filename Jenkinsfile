@@ -53,7 +53,6 @@ pipeline{
                  	}
                        }
                     }
-                 }
 		stage('ansible playbook'){
 			steps{
 			 	script{
