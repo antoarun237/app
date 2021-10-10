@@ -5,7 +5,7 @@
       src: deployment.yaml
       dest: /home/arun/
   - command: whoami
-      register: result
+    register: result
   - debug:
       var: result.stdout
   - name: delete the previous of kubernetes objects 
