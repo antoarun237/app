@@ -1,5 +1,4 @@
 - hosts: test
-  remote_user=arun
   tasks:
   - name: copy deployment file to kubernetes master 
     copy:
