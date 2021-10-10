@@ -1,8 +1,5 @@
 [test]
 54.148.151.64
-all:
-  hosts:
-    test:
-  vars:
-    ansible_connection: ssh
-    ansible_user: arun
+vars:
+  ansible_connection: ssh
+  ansible_user: arun
