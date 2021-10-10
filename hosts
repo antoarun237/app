@@ -1,6 +1,5 @@
 [test]
-172.31.19.91
-remote_user=root
+root@172.31.19.91
 host_key_checking=false
 [privilege_escalation]
 become=true
