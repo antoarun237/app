@@ -5,7 +5,7 @@
       src: deployment.yaml
       dest: /home/arun/
   - name: delete the previous of kubernetes objects 
-    command: kubectl delete -f //home/arun/deployment.yaml
+    command: kubectl delete -f /home/arun/deployment.yaml
   - name: Create a Deployment by reading the definition from a local file
     command: kubectl apply -f /home/arun/deployment.yaml
       
