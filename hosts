@@ -1,5 +1,5 @@
 [test]
-root@54.148.151.64
+arun@54.148.151.64
 host_key_checking=false
 [privilege_escalation]
 become=true
