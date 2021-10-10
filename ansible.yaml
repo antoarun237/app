@@ -3,9 +3,9 @@
   - name: copy deployment file to kubernetes master 
     copy:
       src: deployment.yaml
-      dest: /root/
+      dest: /home/arun/
   - name: delete the previous of kubernetes objects 
-    command: kubectl delete -f /root/deployment.yaml
+    command: kubectl delete -f //home/arun/deployment.yaml
   - name: Create a Deployment by reading the definition from a local file
-    command: kubectl apply -f /root/deployment.yaml
+    command: kubectl apply -f /home/arun/deployment.yaml
       
