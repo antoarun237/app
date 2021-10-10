@@ -60,7 +60,7 @@ pipeline{
 				     echo ${final_tag}test
 				     sed -i "s/docker_tag/$final_tag/g"  deployment.yaml
 				     '''
-				    ansiblePlaybook become: false, installation: 'ansible', inventory: 'hosts', playbook: 'ansible.yaml'
+				    ansiblePlaybook becomeUser: 'arun', installation: 'ansible', inventory: 'hosts', playbook: 'ansible.yaml'
 				}
 			}
 		}
